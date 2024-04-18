@@ -39,18 +39,10 @@ services:
     environment:
       - TZ=Asia/Shanghai
 
-  llm-glm4:
-    image: vinlic/glm-free-api:latest
-    restart: always
-    environment:
-      - TZ=Asia/Shanghai
 
 
-  llm-qwen:
-    image: vinlic/qwen-free-api:latest
-    restart: always
-    environment:
-      - TZ=Asia/Shanghai
+
+
 
   searxng:
     image: docker.io/searxng/searxng:latest
